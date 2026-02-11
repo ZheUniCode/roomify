@@ -18,3 +18,13 @@
     "NEW INSTRUCTION": "WHEN starting interval or timeout THEN store ids in refs and clear on unmount"
 }
 
+[2026-02-11 21:53] - Updated by Junie - Trajectory analysis
+{
+    "PLAN QUALITY": "near-optimal",
+    "REDUNDANT STEPS": "manual verify",
+    "MISSING STEPS": "pre-clear timers before new process",
+    "BOTTLENECK": "Not clearing existing timers when processFile is called again can overlap timers.",
+    "PROJECT NOTE": "Consider using ReturnType<typeof setTimeout> for timer refs to avoid DOM/Node typing issues.",
+    "NEW INSTRUCTION": "WHEN creating new timers in processFile THEN clear and null existing interval and timeout refs"
+}
+

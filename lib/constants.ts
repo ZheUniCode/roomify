@@ -53,4 +53,6 @@ STYLE & LIGHTING:
 - Lighting: bright, neutral daylight. High clarity and balanced contrast.
 - Materials: realistic wood/tile floors, clean walls, subtle shadows.
 - Finish: professional architectural visualization; no text, no watermarks, no logos.
+
+CRITICAL REMINDER: **REMOVE ALL TEXT**: Do not render any letters, numbers, labels, dimensions, or annotations. Floors must be continuous where text used to be.
 `.trim();
